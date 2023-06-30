@@ -1,9 +1,17 @@
 "use client";
 
-import { useState, useEffect } from 'react'
-import Loading from './_components/loading';
-import Navbar from './_components/navbar';
-import Intro from './_components/intro';
+import { useState } from 'react'
+import Loading from './_components/Loading';
+import Navbar from './_components/Navbar';
+import Intro from './_components/Intro';
+import Facts from './_components/Facts';
+import About from './_components/About';
+import Speakers from './_components/Speakers';
+import FAQ from './_components/FAQ';
+import Bottom from './_components/Bottom';
+import { SpeakerList } from './_data/Speakers';
+import { SponsorList } from './_data/Sponsor';
+import Sponsors from './_components/Sponsors';
 
 
 export default function Home() {
@@ -15,8 +23,16 @@ export default function Home() {
         <Loading setTriggerLoading={setTriggerLoading} />
       :
         <div className='flex flex-col items-center justify-center h-full w-full'>
-          <Navbar />
-          <Intro />
+          <div className='w-[90%]'>
+            <Navbar />
+            <Intro />
+            <Facts />
+            <About />
+            <Speakers data={SpeakerList}/>
+            <Sponsors data={SponsorList}/>
+            <FAQ />
+            <Bottom />
+          </div>
         </div>
       }
     </div>

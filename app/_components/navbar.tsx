@@ -1,7 +1,6 @@
 "use client";
 
-import Logo from "../_assets/logo.png"
-import { Golos_Text } from 'next/font/google';
+import Logo from "../_assets/icons8-pixel-heart-100.png"
 import { Silkscreen } from 'next/font/google';
 
 
@@ -15,14 +14,17 @@ const silkScreen = Silkscreen({
 export default function Navbar() {
 
     return (
-        <div style={silkScreen.style} className='flex flex-row items-center justify-center h-full w-full justify-evenly py-6'>
-            <img className="w-14 h-14 mx-6" src={Logo.src} alt="navbar-logo" />
+        <div style={silkScreen.style} className='flex flex-row items-center justify-center px-4 py-4 top-0 w-full'>
             <div>
+                <img className="w-12 h-12 mx-6" src={Logo.src} alt="navbar-logo" />
+            </div>
+            <div className='flex flex-row items-center justify-center h-full w-full py-6'>
                 <a className="mx-6" href="#">About</a>
                 <a className="mx-6" href="#">Speakers</a>
+                <a className="mx-6" href="#">Sponsors</a>
                 <a className="mx-6" href="#">FAQ</a>
-                <button>Login</button>
             </div>
+            <button className="mx-6">Login</button>
         </div>
     )
 }
