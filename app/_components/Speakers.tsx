@@ -1,5 +1,3 @@
-"use client";
-
 import { Silkscreen } from 'next/font/google';
 import { SpeakerType } from '../_data/Speakers';
 

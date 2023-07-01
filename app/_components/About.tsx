@@ -1,6 +1,4 @@
-"use client";
-
-import AboutImage from "../_assets/umberto-deb2EnbWPr8-unsplash.jpg"
+import AboutImage from "../_assets/about/umberto-deb2EnbWPr8-unsplash.jpg"
 import { Silkscreen } from 'next/font/google';
 
 

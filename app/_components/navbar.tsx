@@ -1,5 +1,3 @@
-"use client";
-
 import Logo from "../_assets/icons8-pixel-heart-100.png"
 import { Silkscreen } from 'next/font/google';
 

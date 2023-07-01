@@ -12,6 +12,7 @@ import Bottom from './_components/Bottom';
 import { SpeakerList } from './_data/Speakers';
 import { SponsorList } from './_data/Sponsor';
 import Sponsors from './_components/Sponsors';
+import Schedule from './_components/Schedule';
 
 
 export default function Home() {
@@ -23,16 +24,17 @@ export default function Home() {
         <Loading setTriggerLoading={setTriggerLoading} />
       :
         <div className='flex flex-col items-center justify-center h-full w-full'>
+          <Navbar />
           <div className='w-[90%]'>
-            <Navbar />
             <Intro />
             <Facts />
             <About />
+            <Schedule />
             <Speakers data={SpeakerList}/>
             <Sponsors data={SponsorList}/>
             <FAQ />
-            <Bottom />
           </div>
+          <Bottom />
         </div>
       }
     </div>

@@ -1,5 +1,3 @@
-"use client";
-
 import { Silkscreen } from 'next/font/google';
 import { SponsorType } from '../_data/Sponsor';
 
