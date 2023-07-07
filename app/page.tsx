@@ -15,8 +15,14 @@ import Sponsors from './_components/Sponsors';
 import Schedule from './_components/Schedule';
 
 
+import { useSession, signIn, signOut } from 'next-auth/react';
+
+
 export default function Home() {
   const [triggerLoading, setTriggerLoading] = useState(true)
+  const { data: session } = useSession({
+    required: true,
+  })
 
   return (
     <div>
