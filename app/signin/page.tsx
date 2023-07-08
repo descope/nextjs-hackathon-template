@@ -2,6 +2,7 @@
 
 import { Silkscreen } from 'next/font/google';
 import dynamic from "next/dynamic";
+import { AuthProvider, useDescope, useSession, useUser } from '@descope/react-sdk'
 
 
 const silkScreen = Silkscreen({
@@ -31,7 +32,9 @@ export default async function signin() {
     return (
         <div style={silkScreen.style} className='flex flex-col items-center justify-center h-screen w-full py-10'>
             <h1>Sign In</h1>
-            <DescopeWC flowId={'P2RvyUSbOG2KwrxebqHucn5YIXxw'} />
+            <AuthProvider projectId='P2RvyUSbOG2KwrxebqHucn5YIXxw'>
+                <DescopeWC flowId={'sign-in'} />
+            </AuthProvider>
         </div>
     )
 }
