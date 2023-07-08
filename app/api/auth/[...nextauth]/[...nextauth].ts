@@ -28,9 +28,6 @@ export const authOptions: AuthConfig = {
       clientSecret: "K2SFouDlLxC0xQhlBAkqgVMii0V3Qgptwnp6unXL26dHCorCl3ao91m1MTz8bwVzFqqTKff",
     }),
   ],
-  // pages: {
-  //   signIn: "/signin"
-  // }
 } 
 
 
