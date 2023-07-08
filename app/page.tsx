@@ -13,15 +13,17 @@ import { SpeakerList } from './_data/Speakers';
 import { SponsorList } from './_data/Sponsor';
 import Sponsors from './_components/Sponsors';
 import Schedule from './_components/Schedule';
-
-
-import { useSession, signIn, signOut } from 'next-auth/react';
+import { useSession } from 'next-auth/react';
+import { redirect } from 'next/navigation';
 
 
 export default function Home() {
   const [triggerLoading, setTriggerLoading] = useState(true)
-  const { data: session } = useSession({
-    required: true,
+  const { data: session } = useSession({ 
+    required: true, 
+    onUnauthenticated() {
+      redirect('/signin?callbackURL=/signin')
+    }
   })
 
   return (

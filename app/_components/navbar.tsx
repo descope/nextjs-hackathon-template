@@ -1,4 +1,5 @@
 import Logo from "../_assets/icons8-pixel-heart-100.png"
+import Link from 'next/link';
 import { Silkscreen } from 'next/font/google';
 
 
@@ -22,7 +23,7 @@ export default function Navbar() {
                 <a className="mx-6" href="#">Sponsors</a>
                 <a className="mx-6" href="#">FAQ</a>
             </div>
-            <button className="mx-6">Login</button>
+            <Link href={"/signin"} className="mx-6">Login</Link>
         </div>
     )
 }
