@@ -2,14 +2,6 @@
 
 import styles from "./styles/Animation.module.css"
 import { MouseEvent, useState, Dispatch, SetStateAction } from 'react'
-import { Silkscreen } from 'next/font/google';
-
-
-const silkScreen = Silkscreen({
-    subsets: ["latin"],
-    style: "normal",
-    weight: '400'
-})
 
 
 export default function Loading({ setTriggerLoading }: { setTriggerLoading: Dispatch<SetStateAction<boolean>> }) {
@@ -26,7 +18,7 @@ export default function Loading({ setTriggerLoading }: { setTriggerLoading: Disp
     }   
 
     return (
-        <div style={silkScreen.style} className='flex flex-col items-center justify-center h-screen w-full'>
+        <div className='flex flex-col items-center justify-center h-screen w-full'>
             {!error ? 
                 <>
                     <div>

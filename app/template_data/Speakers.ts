@@ -1,7 +1,7 @@
-import Face from '../_assets/speakers/jurica-koletic-7YVZYZeITc8-unsplash.jpg'
+import Face from '../assets/speakers/jurica-koletic-7YVZYZeITc8-unsplash.jpg'
 
 
-export interface SpeakerType {
+export type SpeakerType = {
     "name": string,
     "position": string,
     "img": string

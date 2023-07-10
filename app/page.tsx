@@ -1,30 +1,25 @@
 "use client";
 
 import { useState } from 'react'
-import Loading from './_components/Loading';
-import Navbar from './_components/Navbar';
-import Intro from './_components/Intro';
-import Facts from './_components/Facts';
-import About from './_components/About';
-import Speakers from './_components/Speakers';
-import FAQ from './_components/FAQ';
-import Bottom from './_components/Bottom';
-import { SpeakerList } from './_data/Speakers';
-import { SponsorList } from './_data/Sponsor';
-import Sponsors from './_components/Sponsors';
-import Schedule from './_components/Schedule';
-import { useSession } from 'next-auth/react';
-import { redirect } from 'next/navigation';
+import Loading from './components/Loading';
+import Navbar from './components/Navbar';
+import Intro from './components/Intro';
+import Facts from './components/Facts';
+import About from './components/About';
+import Speakers from './components/Speakers';
+import FAQ from './components/FAQ';
+import Bottom from './components/Bottom';
+import Sponsors from './components/Sponsors';
+import Schedule from './components/Schedule';
+
+import { ScheduleList } from './template_data/Schedule';
+import { SpeakerList } from './template_data/Speakers';
+import { SponsorList } from './template_data/Sponsor';
+import { FAQList } from './template_data/FAQ';
 
 
 export default function Home() {
   const [triggerLoading, setTriggerLoading] = useState(true)
-  const { data: session } = useSession({ 
-    required: true, 
-    onUnauthenticated() {
-      redirect('/signin?callbackURL=/signin')
-    }
-  })
 
   return (
     <div>
@@ -32,15 +27,14 @@ export default function Home() {
         <Loading setTriggerLoading={setTriggerLoading} />
       :
         <div className='flex flex-col items-center justify-center h-full w-full'>
-          <Navbar />
           <div className='w-[90%]'>
             <Intro />
             <Facts />
             <About />
-            <Schedule />
-            <Speakers data={SpeakerList}/>
-            <Sponsors data={SponsorList}/>
-            <FAQ />
+            <Schedule data={ScheduleList} />
+            <Speakers data={SpeakerList} />
+            <Sponsors data={SponsorList} />
+            <FAQ data={FAQList} />
           </div>
           <Bottom />
         </div>
