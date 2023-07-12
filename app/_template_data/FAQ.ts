@@ -1,6 +1,3 @@
-import Face from '../assets/speakers/jurica-koletic-7YVZYZeITc8-unsplash.jpg'
-
-
 export type FAQType = {
     "question": string,
     "answer": string,

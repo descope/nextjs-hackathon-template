@@ -1,4 +1,4 @@
-import Pfp from '../assets/team/pfp.png'
+import Pfp from '../_assets/team/pfp.png'
 
 
 export type TeamType = {
@@ -17,9 +17,9 @@ export const TeamList: TeamType[] = [
         "image": Pfp.src,
         "name": "Eric",
         "role": "Creator",
-        "linkedin": "/in/eric-sheen/",
-        "twitter": "/eric",
-        "facebook": "/eric",
+        "linkedin": "https://www.linkedin.com/in/eric-sheen/",
+        "twitter": "@EricS72285626",
+        "facebook": "N/A",
         "website": "ericsheen.netlify.app"
     }
 ]
