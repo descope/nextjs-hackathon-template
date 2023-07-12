@@ -39,7 +39,7 @@ export default function Navbar({ Logo }: { Logo: string }) {
                             <Link href={"/team"} className="max-md:text-white block py-2 pl-3 pr-4 text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0  md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Team</Link>
                         </li>
                         <li className='max-md:my-5 mr-6'>
-                            <Link href={"/dashboard"} className="text-[#e9e9e9] bg-[#262d3b] py-2 px-7 border-[#45546e] border-4">{session ? "Dashboard" : "Login"}</Link>
+                            <Link href={"/dashboard"} className="text-[#e9e9e9] bg-[#262d3b] py-2 px-7 border-[#45546e] border-4">{session ? "Dashboard" : "Apply"}</Link>
                         </li>
                     </ul>
                 </div>

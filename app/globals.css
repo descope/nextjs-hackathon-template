@@ -7,6 +7,9 @@
   .page {
     @apply flex flex-col items-center justify-center w-full;
   }
+  .space {
+    @apply h-full mt-[18vh] mb-[12vh];
+  }
   .component {
     @apply h-full my-20 mt-40;
   }

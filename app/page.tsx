@@ -1,9 +1,5 @@
-"use client";
-
 import "./globals.css"
 
-import { useState } from 'react'
-import Loading from './_components/Loading';;
 import Intro from './_components/Intro';
 import Facts from './_components/Facts';
 import About from './_components/About';
@@ -23,35 +19,18 @@ import Logo from "./_assets/logo/icons8-pixel-heart-100.png"
 
 
 export default function Home() {
-  const [triggerLoading, setTriggerLoading] = useState(() => {
-    if (typeof window !== 'undefined'){
-      return localStorage.getItem("loading") ? false : true
-    }
-  })
-
-  const splashScreen = () => {
-    window.localStorage.setItem('loading', 'false');
-    setTriggerLoading(false)
-  }
-
   return (
-    <>
-      {triggerLoading ? 
-        <Loading splashScreen={splashScreen} />
-      :
-        <div className='page h-full'>
-          <div className='w-[90%]'>
-            <Intro />
-            <Facts />
-            <About AboutImage={AboutImage.src} />
-            <Schedule data={ScheduleList} />
-            <Speakers data={SpeakerList} />
-            <Sponsors data={SponsorList} />
-            <FAQ data={FAQList} />
-          </div>
-          <Bottom Logo={Logo.src}  />
-        </div>
-      }
-    </>
+    <div className='page h-full'>
+      <div className='w-[90%]'>
+        <Intro />
+        <Facts />
+        <About AboutImage={AboutImage.src} />
+        <Schedule data={ScheduleList} />
+        <Speakers data={SpeakerList} />
+        <Sponsors data={SponsorList} />
+        <FAQ data={FAQList} />
+      </div>
+      <Bottom Logo={Logo.src}  />
+    </div>
   )
 }
