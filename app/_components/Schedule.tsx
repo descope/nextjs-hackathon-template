@@ -1,4 +1,3 @@
-import "../globals.css"
 import { ScheduleType } from '../_template_data/Schedule';
 
 

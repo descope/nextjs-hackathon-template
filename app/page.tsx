@@ -1,5 +1,3 @@
-import "./globals.css"
-
 import Intro from './_components/Intro';
 import Facts from './_components/Facts';
 import About from './_components/About';

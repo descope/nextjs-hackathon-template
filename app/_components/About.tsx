@@ -1,14 +1,20 @@
-import "../globals.css"
+import Image from "next/image"
 
 
 export default function About({ AboutImage }: { AboutImage: string }) {
     return (
         <div className='page component'>
             <div className='row'>
-                <div className='col flex-1 max-md:flex-none items-center justify-center'>
-                    <img className="w-[40vw] max-md:w-full max-md:mb-10 border-gray-800 border-8" src={AboutImage} alt="" />
+                <div className='col flex-1 max-md:flex-none items-center justify-center w-[90%]'>
+                    <Image
+                        src={AboutImage}
+                        alt="About image"
+                        width={200}
+                        height={160}
+                        className="w-[40vw] max-md:w-full max-md:mb-10 border-gray-800 border-8"
+                    />
                 </div>
-                <div className='col flex-1 max-md:flex-none items-center justify-center'>
+                <div className='col flex-1 max-md:flex-none max-md:mt-6 items-center justify-center'>
                     <div className="col w-[90%]">
                         <p className="title justify-start mb-20 text-gray-800">About <span className='text-[#37c598]'>Auth</span>Hacks</p>
                         <p className="text-xl">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>

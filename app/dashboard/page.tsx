@@ -1,9 +1,10 @@
-import "../globals.css"
-
 import Header from "./Header";
 
 
-export default function Dashboard() {
+export default async function Dashboard() {
+    const data = await fetch('http://localhost:3000/api/airtable')
+    console.log(data)
+
     return (
         <div className='page space'>
             <div className="w-[90%]">

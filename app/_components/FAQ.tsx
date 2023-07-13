@@ -1,4 +1,3 @@
-import "../globals.css"
 import { FAQType } from "../_template_data/FAQ"
 
 

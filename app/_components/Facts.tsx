@@ -1,8 +1,4 @@
-import "../globals.css"
-
-
 export default function Facts() {
-
     return (
         <div className='page component mt-0'>
             <div className='row justify-evenly h-full w-full'>
