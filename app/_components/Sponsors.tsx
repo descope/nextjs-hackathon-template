@@ -11,7 +11,7 @@ export default function Sponsors({ data }: { data: SponsorType[] }) {
                     <div key={i} className='row justify-start m-10'>
                         <img className='w-[25vh] object-cover' src={obj.img} alt="" />
                     </div>
-                ))}         
+                ))}
             </div>
         </div>
     )
