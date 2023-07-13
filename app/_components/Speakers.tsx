@@ -17,7 +17,7 @@ export default function Speakers({ data }: { data: SpeakerType[] }) {
                             <p>{obj.position}</p>
                         </div>
                     </div>
-                ))}         
+                ))}
             </div>
         </div>
     )
