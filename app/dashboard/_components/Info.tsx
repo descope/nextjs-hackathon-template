@@ -2,7 +2,7 @@ import { AnnouncementsList } from "@/app/_template_data/Announcements"
 
 export default function Info() {
     return (
-        <div className="row w-full items-stretch my-8">
+        <div className="row w-full items-stretch">
             <div className="flex-1 bg-[#efefef] p-8 mr-2 shadow-xl max-md:mb-2 max-md:mr-0">
                 <h1 className="text-4xl mb-6 text-purple-600">Announcements</h1>
                 {AnnouncementsList.map((announcement, i) => (

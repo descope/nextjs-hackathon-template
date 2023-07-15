@@ -27,7 +27,7 @@ export default async function Dashboard() {
                 {airtableRecord ?
                     <>
                         <Status accepted={airtableRecord['Accepted']} />
-                        <Info />
+                        {airtableRecord['Accepted'] && <Info />}
                         <Application application={airtableRecord} />
                     </>
                     :
