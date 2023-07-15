@@ -11,7 +11,7 @@
     @apply h-full mt-[18vh] mb-[12vh];
   }
   .component {
-    @apply h-full my-20 mt-40;
+    @apply h-full py-20;
   }
   .col {
     @apply flex flex-col w-full;
@@ -22,6 +22,9 @@
   .title {
     @apply text-6xl mb-12 max-md:text-5xl;
   }
+}
+html {
+  scroll-behavior: smooth;
 }
 body {
   background-color: rgb(20, 20, 20);

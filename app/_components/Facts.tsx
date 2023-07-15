@@ -1,6 +1,6 @@
 export default function Facts() {
     return (
-        <div className='page component mt-0'>
+        <div id="facts" className='page component pt-0'>
             <div className='row justify-evenly h-full w-full'>
                 <div className="max-md:w-[90%]">
                     <p className='text-2xl text-red-700'>Hackers</p>

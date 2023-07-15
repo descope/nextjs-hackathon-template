@@ -11,6 +11,8 @@ export default function Bottom({ Logo }: { Logo: string }) {
                     width={200}
                     height={160}
                     className="w-12 h-12 m-6"
+                    placeholder="blur"
+                    blurDataURL={Logo}
                 />
             </div>
             <div className='row items-start h-full py-6 max-md:col text-white'>

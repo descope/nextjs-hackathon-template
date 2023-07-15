@@ -3,7 +3,7 @@ import { FAQType } from "../_template_data/FAQ"
 
 export default function FAQ({ data }: { data: FAQType[] }) {
     return (
-        <div className='page component'>
+        <div id="faq" className='page component'>
             <h1 className='title'>FAQ</h1>
             <div className="row items-stretch w-full">
                 {data.map((faq, i) => (

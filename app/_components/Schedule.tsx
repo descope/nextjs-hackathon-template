@@ -3,7 +3,7 @@ import { ScheduleType } from '../_template_data/Schedule';
 
 export default function Schedule({ data }: { data: ScheduleType[] }) {
     return (
-        <div className='page component'>
+        <div id='schedule' className='page component'>
             <p className='title'>Schedule</p>
             <div className='row items-start justify-evenly w-full'>
                 {data.map((schedule, i) => (
