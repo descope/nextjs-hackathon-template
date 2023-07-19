@@ -20,7 +20,7 @@ export const ScheduleList: ScheduleType[] = [
             },
             {
                 "time": "1:00 PM",
-                "description": "Eric Sheen is giving a speech on startups!"
+                "description": "Descope and GGV Capital are giving a speech on startups!"
             }
         ]
     },

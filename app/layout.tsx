@@ -24,7 +24,7 @@ export const metadata = {
     icon: '/descope.jpeg',
   },
   title: 'Next.js Hackathon Template with Descope Next-Auth',
-  description: 'Created by Eric Sheen',
+  description: 'Created by Descope',
 }
 
 

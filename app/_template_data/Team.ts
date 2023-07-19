@@ -15,11 +15,11 @@ export type TeamType = {
 export const TeamList: TeamType[] = [
     {
         "image": Pfp.src,
-        "name": "Eric",
+        "name": "Descope",
         "role": "Creator",
-        "linkedin": "https://www.linkedin.com/in/eric-sheen/",
-        "twitter": "@EricS72285626",
+        "linkedin": "https://www.linkedin.com/company/descope/",
+        "twitter": "@descopeinc",
         "facebook": "N/A",
-        "website": "ericsheen.netlify.app"
+        "website": "https://descope.com/"
     }
 ]
