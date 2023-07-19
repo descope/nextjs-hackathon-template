@@ -2,7 +2,7 @@
 
 <img src="./readme-assets/authhacks.png" />
 
-### [Template Features](#🪐-the-hackathon-template-comes-with-the-following-full-stack-features) 🪐 | [Tech Stack](#✨-made-with) ✨ | [Setup](#⚙️-setup-local-testing) ⚙️ | [Template Data](#👾-template-data) 👾 | [Airtable Setup](#📦-setting-up-airtable) 📦 | [Gallery](#👨‍🍳-gallery) 👨‍🍳
+### [Template Features](#the-hackathon-template-comes-with-the-following-full-stack-features) 🪐 | [Tech Stack](#made-with) ✨ | [Setup](#setup-local-testing) ⚙️ | [Template Data](#template-data) 👾 | [Airtable Setup](#setting-up-airtable) 📦 | [Gallery](#gallery) 👨‍🍳
 
 <br />
 
