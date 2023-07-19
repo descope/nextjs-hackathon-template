@@ -51,7 +51,7 @@ AIRTABLE_TABLE_NAME="<YOUR_AIRTABLE_TABLE_NAME>"
 $ openssl rand -base64 32
 ```
 
-- Learn more about vonfiguring and setting the right Airtable env variables in our [Setting up Airtable](#📦-setting-up-airtable) section.
+- Learn more about configuring and setting the right Airtable env variables in our [Setting up Airtable](#📦-setting-up-airtable) section.
 
 
 2. Installation
