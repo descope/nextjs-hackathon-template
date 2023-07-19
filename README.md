@@ -119,7 +119,7 @@ All the template data can be customized and found in the following files.
 
 ## 📦 Airtable Setup
 
-Airtable setup can be found in the [Airtable.md](/nextjs-hackathon-template/Airtable.md)! 
+Airtable setup can be found in the [Airtable.md](Airtable.md)! 
 
 ## 👨‍🍳 Gallery
 
