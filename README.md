@@ -66,8 +66,6 @@ The template data can be found in the ```./app/_template_data```
 
 All the template data can be customized and found in the following files. 
 
-<br />
-
 ## 📦 Setting up Airtable
 
 1. Sign into [Airtable](https://airtable.com/).
