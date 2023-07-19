@@ -2,7 +2,7 @@
 
 <img src="./readme-assets/authhacks.png" />
 
-### [Template Features](#-the-hackathon-template-comes-with-the-following-full-stack-features) 🪐 | [Tech Stack](#-made-with) ✨ | [Setup](#-setup-local-testing) ⚙️ | [Template Data](#-template-data) 👾 | [Airtable Setup](#-setting-up-airtable) 📦 | [Gallery](#-gallery) 👨‍🍳
+### [Template Features](#-the-hackathon-template-comes-with-the-following-full-stack-features) 🪐 | [Tech Stack](#-made-with) ✨ | [Setup](#-setup-local-testing) ⚙️ | [Descope](#🔑-descope) 🔑 | [Template Data](#-template-data) 👾 | [Airtable Setup](#📦-airtable-setup) 📦 | [Gallery](#-gallery) 👨‍🍳
 
 <br />
 
@@ -18,7 +18,6 @@
 ✅ A Dashboard page for Hackers to complete onboarding forms, acceptance status, and hackathon announcements. <br/>
 ✅ Fully responsive UI (mobile, tablet, computer). <br/>
 ✅ The latest Next.js app router, API routing protocols, and NextAuth integrations.
-
 
 ## ✨ Made with... 
 
@@ -50,14 +49,65 @@ AIRTABLE_FORM_EMBED="<YOUR_AIRTABLE_FORM_SHARE_EMBED_LINK>"
 $ openssl rand -base64 32
 ```
 
-- Learn more about configuring and setting the right Airtable env variables in our [Setting up Airtable](#📦-setting-up-airtable) section.
-
+The Airtable environment variables are not required. To learn more about creating a form and setting up Airtable as a database go to our [Setting up Airtable](#📦-airtable-setup).
 
 2. Installation
 
 - `npm install`
 - `npm run dev`
 - Open `http://localhost:3000` in your browser
+
+## 🔑 Descope 
+
+Descope is expected to be published as a NextAuth provider in the following months. <br />
+In the mean time, we can implement a custom provider which is as easy to implement! 
+
+Out NextAuth options can be found in ```/app/_utils/options.ts```.  
+
+In our ```authOptions``` we have our custom Descope provider we have attributes such as your ```clientID``` (Descope project id), ```clientSecret``` (Descope access key), and ```wellKnown``` set to Descope's OpenID Connect configuration which contains our authorization endpoints and data ```wellKnown```.
+
+```
+import { NextAuthOptions } from "next-auth"
+
+
+export const authOptions: NextAuthOptions = {
+  providers: [
+    {
+      id: "descope",
+      name: "Descope",
+      type: "oauth",
+      wellKnown: `https://api.descope.com/${process.env.DESCOPE_PROJECT_ID}/.well-known/openid-configuration`,
+      authorization: { params: { scope: "openid email profile" } },
+      idToken: true,
+      clientId: process.env.DESCOPE_PROJECT_ID, 
+      clientSecret: process.env.DESCOPE_ACCESS_KEY,
+      checks: ["pkce", "state"],
+      profile(profile) {
+        return {
+          id: profile.sub,
+          name: profile.name,
+          email: profile.email,
+          image: profile.picture,
+        }
+      },
+    },
+  ]
+}
+```
+
+Then in our ```/app/api/auth/[...nextauth]/route.ts``` we pass our authOptions and intialize NextAuth.
+```
+import NextAuth from "next-auth/next";
+import { authOptions } from "../../../_utils/options";
+
+
+const handler = NextAuth(authOptions)
+
+
+export { handler as GET, handler as POST }
+```
+
+That's it! 
 
 ## 👾 Template Data
  
@@ -67,49 +117,9 @@ The template data can be found in the ```./app/_template_data```
 
 All the template data can be customized and found in the following files. 
 
-## 📦 Setting up Airtable
+## 📦 Airtable Setup
 
-1. Sign into [Airtable](https://airtable.com/).
-2. Click on the "Create a base" button on the bottom left corner of the screen.
-3. In your new Untitled base you can modify the name to be something like "Hackathon Base" and the table name to be something like "Hackers." With the left navigation pane we can select to create a form! 
-
-<img width="600" src="./readme-assets/airtable.png" />
-<img width="300" src="./readme-assets/table_name.png" />
-
-### Airtable Environment Variables
-
-1. We can find our Airtable base by navigating to the [Airtable API reference](https://airtable.com/developers/web/api/introduction) and selecting the base we created. In the documentation you will discover your base. 
-
-<img width="300" src="./readme-assets/airtable_base.png" /> 
-
-<br/>
-
-2. Make sure that your form contains an Email field in order to populate the Airtable. Also make sure to add an Accepted (checkbox) field in your Grid View (do not reveal the checkbox in the form). Example below: 
-
-<img src="./readme-assets/airtable_form_fields.png" /> 
-
-<br/>
-
-3. We can create a [personal access token](https://airtable.com/create/tokens/new) for our Airtable with the following permissions with our Hacker Base selected. 
-
-<img width="700" src="./readme-assets/create_token.png" />
-
-<br />
-
-4. Finally, we need to show our form as well! Click on the Share Form button, click on Embed this view, copy the src as highlighted, and that will be our ```AIRTABLE_FORM_EMBED``` environment variable. 
-
-<img width="400" src="./readme-assets/embed_1.png" />
-<img width="400" src="./readme-assets/embed_2.png" />
-
-<br/>
-
-In the example above, our environment variables would be the following:
-```
-AIRTABLE_PERSONAL_ACCESS_TOKEN="<YOUR_PERSONAL_ACCESS_TOKEN>"
-AIRTABLE_BASE="apprLCAaZ2OuX7L0Q"
-AIRTABLE_TABLE_NAME="Hackers"
-AIRTABLE_FORM_EMBED="<YOUR_AIRTABLE_FORM_SHARE_EMBED_LINK>"
-```
+Airtable setup can be found in the [Airtable.md](/nextjs-hackathon-template/Airtable.md)! 
 
 ## 👨‍🍳 Gallery
 

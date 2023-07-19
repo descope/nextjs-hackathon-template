@@ -33,7 +33,7 @@ export const ScheduleList: ScheduleType[] = [
             },
             {
                 "time": "9:00 PM",
-                "description": "How to build a website in Next.js with Infinit3e!"
+                "description": "How to build a website in Next.js with Descope!"
             }
         ]
     },
