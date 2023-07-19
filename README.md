@@ -62,13 +62,11 @@ $ openssl rand -base64 32
  
 The template data can be found in the ```./app/_template_data``` 
 
-<br/>
-
 <img width="250" src="./readme-assets/template_data.png" />
 
-<br/>
-
 All the template data can be customized and found in the following files. 
+
+<br />
 
 ## 📦 Setting up Airtable
 
