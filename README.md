@@ -83,7 +83,7 @@ All the template data can be customized and found in the following files.
 
 <br/>
 
-2. Make sure that your form contains an Email field in order to populate the Airtable. Also make sure to add an Accepted (checkbox) field in your Grid View (do not reveal this part in the form). Example below: 
+2. Make sure that your form contains an Email field in order to populate the Airtable. Also make sure to add an Accepted (checkbox) field in your Grid View (do not reveal the checkbox in the form). Example below: 
 
 <img src="./readme-assets/airtable_form_fields.png" /> 
 
