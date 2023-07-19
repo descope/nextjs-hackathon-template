@@ -107,6 +107,7 @@ AIRTABLE_TABLE_NAME="Hackers"
 <img src="./readme-assets/authhacks_6.png" />
 <img src="./readme-assets/accepted_1.png" />
 <img src="./readme-assets/accepted_2.png" />
+<img src="./readme-assets/team.png" />
 <img src="./readme-assets/application_pending.png" />
 <img src="./readme-assets/signup.png" />
 
