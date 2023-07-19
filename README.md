@@ -49,7 +49,7 @@ AIRTABLE_FORM_EMBED="<YOUR_AIRTABLE_FORM_SHARE_EMBED_LINK>"
 $ openssl rand -base64 32
 ```
 
-The Airtable environment variables are not required. To learn more about creating a form and setting up Airtable as a database go to our [Setting up Airtable](#📦-airtable-setup).
+The Airtable environment variables are not required. To learn more about creating a form and setting up Airtable as a database go to our [Setting up Airtable](#-airtable-setup).
 
 2. Installation
 
