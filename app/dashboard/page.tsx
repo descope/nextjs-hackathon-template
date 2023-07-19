@@ -15,13 +15,12 @@ const getData = async () => {
     const session = await getServerSession(authOptions)
     const email = session?.user?.email
 
-    const res = await fetch(`http://localhost:3000/api/airtable?email=${email}`, 
+    const res = await fetch(`${process.env.NEXTAUTH_URL}/api/airtable?email=${email}`, 
     {
         method: "GET",
         headers: headers()
       })   
 
-    console.log(res)
     const data = await res.json()
     return data.body
 }
