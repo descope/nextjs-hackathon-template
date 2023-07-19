@@ -30,8 +30,6 @@
 
 1. In the root directory of the project, copy the `.env.example` to `.env` by running `cp .env.example .env` and include the following:
 
-> **Note:** To generate a [NEXTAUTH_SECRET](https://next-auth.js.org/configuration/options#nextauth_secret), you can use this URL: https://generate-secret.vercel.app/32
-
 ```
 NEXTAUTH_SECRET="<YOUR_NEXTAUTH_SECRET>"
 NEXTAUTH_URL="<WHERE SERVER IS HOSTED (e.g. https://localhost:3000)>"
