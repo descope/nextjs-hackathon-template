@@ -10,14 +10,14 @@
 
 ## 🪐 The Hackathon template comes with the following full-stack features:
 
-✅ [Descope](https://descope.com) NextAuth authentication + protected routes 🔐 <br/>
-✅ Protected page & API routes with NextAuth. <br/>
-✅ Airtable backend for hackers to signup, and view hackathon details. <br/>
+✅ [Descope](https://descope.com) NextAuth authentication 🔐 <br/>
+✅ Protected pages & API routes with NextAuth. <br/>
+✅ The latest Next.js app router, API routing protocols, and NextAuth integrations.
 ✅ A fully and easily customizable Home screen which features an About, Speakers, Sponsors, and FAQ section. <br/>
 ✅ A dedicated Team page to showcase all contributors.  <br/>
 ✅ A Dashboard page for Hackers to complete onboarding forms, acceptance status, and hackathon announcements. <br/>
 ✅ Fully responsive UI (mobile, tablet, computer). <br/>
-✅ The latest Next.js app router, API routing protocols, and NextAuth integrations.
+✅ Airtable backend for hackers to signup and view hackathon details. <br/>
 
 ## ✨ Made with... 
 
