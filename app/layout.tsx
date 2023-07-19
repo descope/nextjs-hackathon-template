@@ -1,15 +1,15 @@
 import './globals.css'
 
-import { Silkscreen } from 'next/font/google';
+import { Silkscreen } from 'next/font/google'
 
 import NextAuthSessionProvider from './_providers/sessionProvider'
-import Navbar from './_components/Navbar';
+import Navbar from './_components/Navbar'
 
 import LogoBlack from "./_assets/logo/icons8-pixel-heart-100 (black).png"
 import LogoWhite from "./_assets/logo/icons8-pixel-heart-100.png"
 
-import Bottom from './_components/Bottom';
-import { SocialList } from './_template_data/Social';
+import Bottom from './_components/Bottom'
+import { SocialList } from './_template_data/Social'
 
 
 const silkScreen = Silkscreen({

@@ -1,5 +1,5 @@
 import Image from "next/image"
-import { SponsorType } from '../_template_data/Sponsor';
+import { SponsorType } from '../_template_data/Sponsor'
 
 
 export default function Sponsors({ data }: { data: SponsorType[] }) {

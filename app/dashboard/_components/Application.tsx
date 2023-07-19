@@ -1,4 +1,4 @@
-import { Golos_Text } from 'next/font/google';
+import { Golos_Text } from 'next/font/google'
 
 
 const golosText = Golos_Text({
@@ -14,7 +14,7 @@ export default function Application({ application }: { application: any }) {
             <h1 className="text-4xl mb-8 text-blue-500">My Application</h1>
             <div className='bg-[#fafafa] p-6'>
                 {Object.keys(application).map((app, i) => (
-                    <div className={`mb-4 ${golosText.className}`}>
+                    <div key={i} className={`mb-4 ${golosText.className}`}>
                         <p className='text-lg'>{app}</p>
                         <p className='text-xl'>{application[app]}</p>
                     </div>

@@ -1,11 +1,9 @@
-import { AnnouncementsList } from "@/app/_template_data/Announcements"
-
-export default function Info() {
+export default function Info({ data }: { data: string[] }) {
     return (
         <div className="row w-full items-stretch">
             <div className="flex-1 bg-[#efefef] p-8 mr-2 shadow-xl max-md:mb-2 max-md:mr-0">
                 <h1 className="text-4xl mb-6 text-purple-600">Announcements</h1>
-                {AnnouncementsList.map((announcement, i) => (
+                {data.map((announcement, i) => (
                     <div key={i} className="mb-3">
                         <p className="bg-gray-200 p-4">{announcement}</p>
                     </div>

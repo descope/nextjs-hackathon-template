@@ -1,6 +1,5 @@
 import Image from "next/image"
 import { SocialType } from "../_template_data/Social"
-import { stringify } from "querystring"
 
 
 export default function Bottom({ Logo, SocialList }: { Logo: string, SocialList: SocialType[] }) {

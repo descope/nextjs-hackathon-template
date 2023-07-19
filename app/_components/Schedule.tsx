@@ -1,4 +1,4 @@
-import { ScheduleType } from '../_template_data/Schedule';
+import { ScheduleType } from '../_template_data/Schedule'
 
 
 export default function Schedule({ data }: { data: ScheduleType[] }) {

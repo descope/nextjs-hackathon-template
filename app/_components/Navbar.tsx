@@ -3,9 +3,9 @@
 import 'flowbite'
 
 import Image from "next/image"
-import Link from 'next/link';
+import Link from 'next/link'
 
-import { useSession, signIn } from "next-auth/react";
+import { useSession, signIn } from "next-auth/react"
 
 
 export default function Navbar({ Logo }: { Logo: string }) {
@@ -51,7 +51,7 @@ export default function Navbar({ Logo }: { Logo: string }) {
                         <li>
                             <Link href={"/team"} className="max-md:text-white block py-2 pl-3 pr-4 max-md:mb-2 text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0  md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Team</Link>
                         </li>
-                        <li className='mr-6 max-md:pb-2'>
+                        <li className='mr-6 max-md:pb-2 max-md:mb-1'>
                             {session ? 
                                 <Link href={"/dashboard"} className="text-[#e9e9e9] bg-[#262d3b] py-2 px-7 border-[#45546e] border-4">Dashboard</Link>
                                 :

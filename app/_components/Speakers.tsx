@@ -1,5 +1,5 @@
 import Image from "next/image"
-import { SpeakerType } from '../_template_data/Speakers';
+import { SpeakerType } from '../_template_data/Speakers'
 
 
 export default function Speakers({ data }: { data: SpeakerType[] }) {

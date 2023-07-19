@@ -1,17 +1,27 @@
-import Header from "./_components/Header";
-import { getServerSession } from 'next-auth';
-import { authOptions } from '@/app/_utils/options';
-import Status from "./_components/Status";
-import Form from "./_components/Form";
-import Application from "./_components/Application";
-import Info from "./_components/Info";
+import { getServerSession } from 'next-auth'
+import { authOptions } from '@/app/_utils/options'
 
+import Header from "./_components/Header"
+import Status from "./_components/Status"
+import Form from "./_components/Form"
+import Application from "./_components/Application"
+import Info from "./_components/Info"
+
+import { AnnouncementsList } from "@/app/_template_data/Announcements"
+
+import { headers } from "next/headers"
 
 const getData = async () => {
     const session = await getServerSession(authOptions)
     const email = session?.user?.email
 
-    const res = await fetch(`http://localhost:3000/api/airtable?email=${email}`)
+    const res = await fetch(`http://localhost:3000/api/airtable?email=${email}`, 
+    {
+        method: "GET",
+        headers: headers()
+      })   
+
+    console.log(res)
     const data = await res.json()
     return data.body
 }
@@ -27,7 +37,9 @@ export default async function Dashboard() {
                 {airtableRecord ?
                     <>
                         <Status accepted={airtableRecord['Accepted']} />
-                        {airtableRecord['Accepted'] && <Info />}
+                        {airtableRecord['Accepted'] && 
+                            <Info data={AnnouncementsList} />
+                        }
                         <Application application={airtableRecord} />
                     </>
                     :

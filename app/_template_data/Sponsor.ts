@@ -1,6 +1,4 @@
-import AMD from '../_assets/sponsors/amd.png'
-import Google from '../_assets/sponsors/google.webp'
-import Wealthsimple from '../_assets/sponsors/wealthsimple.webp'
+import Logo from '../_assets/sponsors/scott-webb-bmmcfZqSjBU-unsplash.jpg'
 
 
 export type SponsorType = {
@@ -10,12 +8,12 @@ export type SponsorType = {
 
 export const SponsorList: SponsorType[] = [
     {
-        "img": AMD.src
+        "img": Logo.src
     },
     {
-        "img": Google.src
+        "img": Logo.src
     },
     {
-        "img": Wealthsimple.src
+        "img": Logo.src
     }
 ]
