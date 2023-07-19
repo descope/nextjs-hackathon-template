@@ -70,9 +70,10 @@ All the template data can be customized and found in the following files.
 
 1. Sign into [Airtable](https://airtable.com/).
 2. Click on the "Create a base" button on the bottom left corner of the screen.
-3. In your new Untitled base you can modify the name to be something like "Hackathon Base" and the table Grid View name to be something like "Hackers." With the left navigation pane we can select to create a form! 
+3. In your new Untitled base you can modify the name to be something like "Hackathon Base" and the table name to be something like "Hackers." With the left navigation pane we can select to create a form! 
 
 <img width="600" src="./readme-assets/airtable.png" />
+<img width="300" src="./readme-assets/table_name.png" />
 
 ### Airtable Environment Variables
 
@@ -82,9 +83,22 @@ All the template data can be customized and found in the following files.
 
 <br/>
 
-2. We can create a [personal access token](https://airtable.com/create/tokens/new) for our Airtable with the following permissions with our Hacker Base selected. 
+2. Make sure that your form contains an Email field in order to populate the Airtable. Also make sure to add an Accepted (checkbox) field in your Grid View (do not reveal this part in the form). Example below: 
+
+<img src="./readme-assets/airtable_form_fields.png" /> 
+
+<br/>
+
+3. We can create a [personal access token](https://airtable.com/create/tokens/new) for our Airtable with the following permissions with our Hacker Base selected. 
 
 <img width="700" src="./readme-assets/create_token.png" />
+
+<br />
+
+4. Finally, we need to show our form as well! Click on the Share Form button, click on Embed this view, copy the src as highlighted, and that will be our ```AIRTABLE_FORM_EMBED``` environment variable. 
+
+<img width="400" src="./readme-assets/embed_1.png" />
+<img width="400" src="./readme-assets/embed_2.png" />
 
 <br/>
 
@@ -93,6 +107,7 @@ In the example above, our environment variables would be the following:
 AIRTABLE_PERSONAL_ACCESS_TOKEN="<YOUR_PERSONAL_ACCESS_TOKEN>"
 AIRTABLE_BASE="apprLCAaZ2OuX7L0Q"
 AIRTABLE_TABLE_NAME="Hackers"
+AIRTABLE_FORM_EMBED="<YOUR_AIRTABLE_FORM_SHARE_LINK>"
 ```
 
 ## 👨‍🍳 Gallery
