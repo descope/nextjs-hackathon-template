@@ -74,8 +74,6 @@ All the template data can be customized and found in the following files.
 
 <img width="600" src="./readme-assets/airtable.png" />
 
-<br />
-
 ### Airtable Environment Variables
 
 1. We can find our Airtable base by navigating to the [Airtable API reference](https://airtable.com/developers/web/api/introduction) and selecting the base we created. In the documentation you will discover your base. 
@@ -96,8 +94,6 @@ AIRTABLE_PERSONAL_ACCESS_TOKEN="<YOUR_PERSONAL_ACCESS_TOKEN>"
 AIRTABLE_BASE="apprLCAaZ2OuX7L0Q"
 AIRTABLE_TABLE_NAME="Hackers"
 ```
-
-<br />
 
 ## 👨‍🍳 Gallery
 
