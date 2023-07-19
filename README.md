@@ -64,7 +64,7 @@ In the mean time, we can implement a custom provider which is as easy to impleme
 
 Out NextAuth options can be found in ```/app/_utils/options.ts```.  
 
-In our ```authOptions``` we have our custom Descope provider we have attributes such as your ```clientID``` (Descope project id), ```clientSecret``` (Descope access key), and ```wellKnown``` set to Descope's OpenID Connect configuration which contains our authorization endpoints and data ```wellKnown```.
+In our ```authOptions``` we have our custom Descope provider we have attributes such as your ```clientID``` (Descope project id), ```clientSecret``` (Descope access key), and ```wellKnown``` set to Descope's OpenID Connect configuration which contains our authorization endpoints and authentication data.
 
 ```
 import { NextAuthOptions } from "next-auth"
