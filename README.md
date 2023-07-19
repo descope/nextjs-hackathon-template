@@ -1,10 +1,10 @@
 # Next.js Hackathon Template
 
-### 🚀 The Next.js Hackathon Template comes with Next.js 13 and Authentication using NextAuth and Descope. 
+## 🚀 The Next.js Hackathon Template comes with Next.js 13 and Authentication using NextAuth and Descope. 
 
 ## 🪐 The Hackathon template comes with the following full-stack features:
 
-- ✅ [Descope](https://descope.com) NextAuth authentication + protected routes :lock:
+- ✅ [Descope](https://descope.com) NextAuth authentication + protected routes 🔐
 - ✅ Protected page & API routes with NextAuth.
 - ✅ Airtable backend for hackers to signup, and view hackathon details. 
 
@@ -37,7 +37,6 @@ DESCOPE_ACCESS_KEY="<YOUR_DESCOPE_ACCESS_KEY>"
 AIRTABLE_PERSONAL_ACCESS_TOKEN="<YOUR_AIRTABLE_PERSONAL_ACCESS_TOKEN>"
 AIRTABLE_BASE="<YOUR_AIRTABLE_BASE>"
 AIRTABLE_TABLE_NAME="<YOUR_AIRTABLE_TABLE_NAME>"
-
 ```
 
 - `DESCOPE_PROJECT_ID` - can be found in your Descope's account under the [Project page](https://app.descope.com/settings/project)  
@@ -54,3 +53,28 @@ $ openssl rand -base64 32
 - Open `http://localhost:3000` in your browser
 
 ## 👾 Template Data
+ 
+The template data can be found in the ```./app/_template_data``` 
+
+<br/>
+
+<img width="250" src="./readme-assets/template_data.png" />
+
+All the template data can be customized and found in the following files. 
+
+## 👨‍🍳 Gallery
+
+<img src="./readme-assets/authhacks_1.png" />
+<img src="./readme-assets/authhacks_2.png" />
+<img src="./readme-assets/authhacks_3.png" />
+<img src="./readme-assets/authhacks_4.png" />
+<img src="./readme-assets/authhacks_5.png" />
+<img src="./readme-assets/authhacks_6.png" />
+<img src="./readme-assets/accepted_1.png" />
+<img src="./readme-assets/accepted_2.png" />
+<img src="./readme-assets/application_pending.png" />
+<img src="./readme-assets/signup.png" />
+
+<br />
+
+## Made with ☕ + 💙

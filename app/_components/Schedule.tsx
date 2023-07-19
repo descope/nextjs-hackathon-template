@@ -13,7 +13,7 @@ export default function Schedule({ data }: { data: ScheduleType[] }) {
                             {schedule.events.map((event, i) => (
                                 <div key={i} className='col align-start my-3 bg-[#202020] text-[#e7e7e7] py-6 pb-7 pl-7'>
                                     <p className='text-xl mb-3 text-[#994ef5]'>{event.time}</p>
-                                    <p>{event.description}</p>
+                                    <p className='w-[90%]'>{event.description}</p>
                                 </div>
                             ))}
                         </div>

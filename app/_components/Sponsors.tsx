@@ -14,7 +14,7 @@ export default function Sponsors({ data }: { data: SponsorType[] }) {
                             alt="sponsor img"
                             width={200}
                             height={160}
-                            className="w-[25vh] object-cover"
+                            className="w-[35vh] object-cover"
                             placeholder="blur"
                             blurDataURL={obj.img}
                         />

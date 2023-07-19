@@ -10,6 +10,7 @@ import { ScheduleList } from './_template_data/Schedule'
 import { SpeakerList } from './_template_data/Speakers'
 import { SponsorList } from './_template_data/Sponsor'
 import { FAQList } from './_template_data/FAQ'
+import { AboutParagraph } from './_template_data/About'
 
 import AboutImage from "./_assets/about/umberto-deb2EnbWPr8-unsplash.jpg"
 
@@ -20,7 +21,7 @@ export default function Home() {
       <div className='w-[90%]'>
         <Intro />
         <Facts />
-        <About AboutImage={AboutImage.src} />
+        <About data={AboutParagraph} AboutImage={AboutImage.src} />
         <Schedule data={ScheduleList} />
         <Speakers data={SpeakerList} />
         <Sponsors data={SponsorList} />

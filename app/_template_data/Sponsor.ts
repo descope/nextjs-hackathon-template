@@ -1,4 +1,4 @@
-import Logo from '../_assets/sponsors/scott-webb-bmmcfZqSjBU-unsplash.jpg'
+import Logo from '../_assets/sponsors/esther-jiao-ADv0GiMBlmI-unsplash.jpg'
 
 
 export type SponsorType = {

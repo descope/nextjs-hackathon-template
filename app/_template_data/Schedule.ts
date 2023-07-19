@@ -16,11 +16,11 @@ export const ScheduleList: ScheduleType[] = [
         "events": [
             {
                 "time": "12:00 PM",
-                "description": "Speaker Event 1"
+                "description": "Free Boba in the Engineering Building. Bring your hacker passes."
             },
             {
                 "time": "1:00 PM",
-                "description": "Event 2"
+                "description": "Eric Sheen is giving a speech on startups!"
             }
         ]
     },
@@ -28,12 +28,12 @@ export const ScheduleList: ScheduleType[] = [
         "date": "Tuesday July 11 2023",
         "events": [
             {
-                "time": "12:00 PM",
-                "description": "Speaker Event 1"
+                "time": "3:00 PM",
+                "description": "Descope workshop in Room 117! Learn all about authentication and user management!"
             },
             {
-                "time": "1:00 PM",
-                "description": "Event 2"
+                "time": "9:00 PM",
+                "description": "How to build a website in Next.js with Infinit3e!"
             }
         ]
     },
