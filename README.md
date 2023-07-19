@@ -35,11 +35,6 @@ NEXTAUTH_URL="<WHERE SERVER IS HOSTED (e.g. https://localhost:3000)>"
 
 DESCOPE_PROJECT_ID="<YOUR_DESCOPE_PROJECT_ID>"
 DESCOPE_ACCESS_KEY="<YOUR_DESCOPE_ACCESS_KEY>"
-
-AIRTABLE_PERSONAL_ACCESS_TOKEN="<YOUR_AIRTABLE_PERSONAL_ACCESS_TOKEN>"
-AIRTABLE_BASE="<YOUR_AIRTABLE_BASE>"
-AIRTABLE_TABLE_NAME="<YOUR_AIRTABLE_TABLE_NAME>"
-AIRTABLE_FORM_EMBED="<YOUR_AIRTABLE_FORM_SHARE_EMBED_LINK>"
 ```
 
 - `DESCOPE_PROJECT_ID` - can be found in your Descope's account under the [Project page](https://app.descope.com/settings/project)  
@@ -48,8 +43,6 @@ AIRTABLE_FORM_EMBED="<YOUR_AIRTABLE_FORM_SHARE_EMBED_LINK>"
 ```
 $ openssl rand -base64 32
 ```
-
-The Airtable environment variables are not required. To learn more about creating a form and setting up Airtable as a database go to our [Setting up Airtable](#-airtable-setup).
 
 2. Installation
 
@@ -115,11 +108,15 @@ The template data can be found in the ```./app/_template_data```
 
 <img width="250" src="./readme-assets/template_data.png" />
 
-All the template data can be customized and found in the following files. 
+All the template data can be customized and found in the following files. <br />
+
+To see our template data in action make your way to ```app/page.tsx```. <br />
+In the ```page.tsx``` we import the different template data and the components from our ```_components``` folder. We pass in 
+our template data into these components as props that then render the data! 
 
 ## 📦 Airtable Setup
 
-Airtable setup can be found in the [Airtable.md](Airtable.md)! 
+To learn more about creating a form and setting up Airtable as a database go to [Airtable.md](Airtable.md)! 
 
 ## 👨‍🍳 Gallery
 
