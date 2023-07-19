@@ -53,7 +53,7 @@ Once your Airtable is all setup, all you have to do is uncomment the res variabl
 In the example above, our environment variables would be the following:
 ```
 AIRTABLE_PERSONAL_ACCESS_TOKEN="<YOUR_PERSONAL_ACCESS_TOKEN>"
-AIRTABLE_BASE="apprLCAaZ2OuX7L0Q"
+AIRTABLE_BASE="appwwhK2wM440NySn"
 AIRTABLE_TABLE_NAME="Hackers"
 AIRTABLE_FORM_EMBED="<YOUR_AIRTABLE_FORM_SHARE_EMBED_LINK>"
 ```
