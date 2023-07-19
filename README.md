@@ -84,7 +84,7 @@ All the template data can be customized and found in the following files.
 
 <br/>
 
-2. We can create a [personal access token](https://airtable.com/create/tokens/new) for our Airtable with the following permissions and our Hacker Base selected. 
+2. We can create a [personal access token](https://airtable.com/create/tokens/new) for our Airtable with the following permissions with our Hacker Base selected. 
 
 <img width="700" src="./readme-assets/create_token.png" />
 
