@@ -67,7 +67,6 @@ The template data can be found in the ```./app/_template_data```
 <br/>
 
 <img width="250" src="./readme-assets/template_data.png" />
-Fig: template data files
 
 <br/>
 
@@ -81,8 +80,6 @@ All the template data can be customized and found in the following files.
 
 <img width="600" src="./readme-assets/airtable.png" />
 
-Fig: Setting up our Airtable base
-
 <br />
 
 ### Airtable Environment Variables
@@ -91,15 +88,11 @@ Fig: Setting up our Airtable base
 
 <img width="300" src="./readme-assets/airtable_base.png" /> 
 
-Fig: Finding our Airtable base
-
 <br/>
 
 2. We can create a [personal access token](https://airtable.com/create/tokens/new) for our Airtable with the following permissions and our Hacker Base selected. 
 
 <img width="700" src="./readme-assets/create_token.png" />
-
-Fig: Create a personal access token in Airtable
 
 <br/>
 
