@@ -1,8 +1,4 @@
-import "../globals.css"
-
-
 export default function Intro() {
-
     return (
         <div className='page h-screen text-center'>
             <h1 className='row text-9xl m-0 p-0 mb-2 text-gray-800 max-md:text-6xl'><span className='text-[#37c598]'>Auth</span>Hacks</h1>

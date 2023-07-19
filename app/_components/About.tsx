@@ -1,22 +1,28 @@
-import "../globals.css"
+import Image from "next/image"
+import { AboutType } from "../_template_data/About"
 
 
-export default function About({ AboutImage }: { AboutImage: string }) {
+export default function About({ data, AboutImage }: { data: AboutType, AboutImage: string }) {
     return (
-        <div className='page component'>
+        <div id="about" className='page component'>
             <div className='row'>
-                <div className='col flex-1 max-md:flex-none items-center justify-center'>
-                    <img className="w-[40vw] max-md:w-full max-md:mb-10 border-gray-800 border-8" src={AboutImage} alt="" />
+                <div className='col flex-1 max-md:flex-none items-center justify-center w-[90%]'>
+                    <Image
+                        src={AboutImage}
+                        alt="About image"
+                        width={200}
+                        height={160}
+                        className="w-[40vw] max-md:w-full max-md:mb-10 border-gray-800 border-8"
+                        placeholder="blur"
+                        blurDataURL={AboutImage}
+                    />
                 </div>
-                <div className='col flex-1 max-md:flex-none items-center justify-center'>
+                <div className='col flex-1 max-md:flex-none max-md:mt-6 items-center justify-center'>
                     <div className="col w-[90%]">
                         <p className="title justify-start mb-20 text-gray-800">About <span className='text-[#37c598]'>Auth</span>Hacks</p>
-                        <p className="text-xl">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <p className="text-lg">{ data.firstParagraph }</p>
                         <br />
-                        <p className="text-xl">
-                            Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an
-                            unknown printer took a galley of type and scrambled it to make a type specimen book.
-                        </p>
+                        <p className="text-lg">{ data.secondParagraph }</p>
                     </div>
                 </div>
             </div>

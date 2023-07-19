@@ -10,33 +10,33 @@ export type SpeakerType = {
 
 export const SpeakerList: SpeakerType[] = [
     {
-        "name": "Jack Sully",
-        "position": "Software Developer",
+        "name": "Miro Glassy",
+        "position": "Unknown Software Developer",
         "img": Face.src
     },
     {
-        "name": "Elon Musk",
-        "position": "CEO of Tesla",
+        "name": "Pascal Niroclo",
+        "position": "Unknown Big Tech CEO",
         "img": Face.src
     },
     {
-        "name": "John Doe",
-        "position": "Roblox Developer",
+        "name": "James Wordly",
+        "position": "Building Unknown",
         "img": Face.src
     },
     {
-        "name": "Lebron James",
-        "position": "NBA Basketball Player",
+        "name": "Vet Coco",
+        "position": "Veteran Hacker",
         "img": Face.src
     },
     {
-        "name": "Justin Beiber",
-        "position": "Artist",
+        "name": "Justin Calisito",
+        "position": "Unknown Pop Artist",
         "img": Face.src
     },
     {
-        "name": "Justin Beiber",
-        "position": "Artist",
+        "name": "Zed Mirman",
+        "position": "Unknown Professional Pro",
         "img": Face.src
     }
 ]

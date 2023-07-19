@@ -1,21 +1,25 @@
-import { withAuth, NextRequestWithAuth } from "next-auth/middleware"
-import { NextResponse } from "next/server"
+
+import { withAuth } from "next-auth/middleware"
+import { NextRequest, NextResponse } from "next/server"
+import { getToken } from "next-auth/jwt"
 
 
-export default withAuth (
-    function middleware(request: NextRequestWithAuth) {
-        if (request.nextUrl.pathname.startsWith("/api/admin") && request.nextauth.token?.role !== "admin") {
-            return NextResponse.rewrite(
-                new URL("/denied", request.url)
-            )
+export default withAuth(
+    async function middleware (req: NextRequest) {
+        const token = await getToken({ req })
+        const isAuthenticated = !!token;
+
+        if (!isAuthenticated) {
+            const response = new NextResponse("Unauthorized", {
+                status: 401,
+                statusText: "UnAuthorized",
+            });
+            return response
         }
-    },
-    {
-        callbacks: {
-            authorized: ({token}) => !!token
-        }
+
+        return NextResponse.next()
     }
 )
 
 
-export const config = { matcher: ["/dashboard", "/api/airtable", "/api/admin"] }
+export const config = { matcher: ["/dashboard/:path*", "/api/:functions*"] }

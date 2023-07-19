@@ -11,7 +11,7 @@
     @apply h-full mt-[18vh] mb-[12vh];
   }
   .component {
-    @apply h-full my-20 mt-40;
+    @apply h-full py-20;
   }
   .col {
     @apply flex flex-col w-full;
@@ -23,10 +23,13 @@
     @apply text-6xl mb-12 max-md:text-5xl;
   }
 }
-body {
+
+
+html, body {
   background-color: rgb(20, 20, 20);
   color: rgb(22, 22, 22);
   background-image: linear-gradient(to bottom, transparent 20%, rgb(243, 243, 243) 20%),
                     linear-gradient(to right, rgb(190, 190, 190) 20%, rgb(243, 243, 243) 20%);
   background-size: 10px 10px, 10px 10px;
+  scroll-behavior: smooth;
 }
