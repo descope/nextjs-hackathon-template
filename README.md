@@ -28,7 +28,6 @@
 - Flowbite
 - Tailwind CSS
 
-
 ## ⚙️ Setup: Local Testing
 
 1. In the root directory of the project, copy the `.env.example` to `.env` by running `cp .env.example .env` and include the following:
@@ -81,13 +80,17 @@ All the template data can be customized and found in the following files.
 3. In your new Untitled base you can modify the name to be something like "Hackathon Base" and the table Grid View name to be something like "Hackers." With the left navigation pane we can select to create a form! 
 
 <img width="600" src="./readme-assets/airtable.png" />
+
 Fig: Setting up our Airtable base
+
+<br />
 
 ### Airtable Environment Variables
 
 1. We can find our Airtable base by navigating to the [Airtable API reference](https://airtable.com/developers/web/api/introduction) and selecting the base we created. In the documentation you will discover your base. 
 
-<img width="300" src="./readme-assets/airtable_base.png" />
+<img width="300" src="./readme-assets/airtable_base.png" /> 
+
 Fig: Finding our Airtable base
 
 <br/>
@@ -95,6 +98,7 @@ Fig: Finding our Airtable base
 2. We can create a [personal access token](https://airtable.com/create/tokens/new) for our Airtable with the following permissions and our Hacker Base selected. 
 
 <img width="700" src="./readme-assets/create_token.png" />
+
 Fig: Create a personal access token in Airtable
 
 <br/>
