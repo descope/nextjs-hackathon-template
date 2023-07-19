@@ -1,5 +1,11 @@
 # Next.js Hackathon Template
 
+<img src="./readme-assets/authhacks.png" />
+
+### [Template Features](#🪐-the-hackathon-template-comes-with-the-following-full-stack-features) 🪐 | [Tech Stack](#✨-made-with) ✨ | [Setup](#⚙️-setup-local-testing) ⚙️ | [Template Data](#👾-template-data) 👾 | [Airtable Setup](#📦-setting-up-airtable) 📦 | [Gallery](#👨‍🍳-gallery) 👨‍🍳
+
+<br />
+
 ## 🚀 The Next.js Hackathon Template comes with Next.js 13 and Authentication using NextAuth and Descope. 
 
 ## 🪐 The Hackathon template comes with the following full-stack features:
@@ -46,6 +52,9 @@ AIRTABLE_TABLE_NAME="<YOUR_AIRTABLE_TABLE_NAME>"
 $ openssl rand -base64 32
 ```
 
+- Learn more about vonfiguring and setting the right Airtable env variables in our [Setting up Airtable](#📦-setting-up-airtable) section.
+
+
 2. Installation
 
 - `npm install`
@@ -59,8 +68,45 @@ The template data can be found in the ```./app/_template_data```
 <br/>
 
 <img width="250" src="./readme-assets/template_data.png" />
+Fig: template data files
+
+<br/>
 
 All the template data can be customized and found in the following files. 
+
+## 📦 Setting up Airtable
+
+1. Sign into [Airtable](https://airtable.com/).
+2. Click on the "Create a base" button on the bottom left corner of the screen.
+3. In your new Untitled base you can modify the name to be something like "Hackathon Base" and the table Grid View name to be something like "Hackers." With the left navigation pane we can select to create a form! 
+
+<img width="600" src="./readme-assets/airtable.png" />
+Fig: Setting up our Airtable base
+
+### Airtable Environment Variables
+
+1. We can find our Airtable base by navigating to the [Airtable API reference](https://airtable.com/developers/web/api/introduction) and selecting the base we created. In the documentation you will discover your base. 
+
+<img width="300" src="./readme-assets/airtable_base.png" />
+Fig: Finding our Airtable base
+
+<br/>
+
+2. We can create a [personal access token](https://airtable.com/create/tokens/new) for our Airtable with the following permissions and our Hacker Base selected. 
+
+<img width="700" src="./readme-assets/create_token.png" />
+Fig: Create a personal access token in Airtable
+
+<br/>
+
+In the example above, our environment variables would be the following:
+```
+AIRTABLE_PERSONAL_ACCESS_TOKEN="<YOUR_PERSONAL_ACCESS_TOKEN>"
+AIRTABLE_BASE="apprLCAaZ2OuX7L0Q"
+AIRTABLE_TABLE_NAME="Hackers"
+```
+
+<br />
 
 ## 👨‍🍳 Gallery
 
@@ -75,6 +121,7 @@ All the template data can be customized and found in the following files.
 <img src="./readme-assets/application_pending.png" />
 <img src="./readme-assets/signup.png" />
 
+<br />
 <br />
 
 ## Made with ☕ + 💙
