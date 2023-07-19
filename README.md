@@ -33,7 +33,7 @@
 > **Note:** To generate a [NEXTAUTH_SECRET](https://next-auth.js.org/configuration/options#nextauth_secret), you can use this URL: https://generate-secret.vercel.app/32
 
 ```
-NEXTAUTH_SECRET="gkbMxCgfeTtjGmUvdqu9BiMf7XRgCIHF3hpdSycr8yE="
+NEXTAUTH_SECRET="<YOUR_NEXTAUTH_SECRET>"
 NEXTAUTH_URL="http://localhost:3000"
 
 DESCOPE_PROJECT_ID="<YOUR_DESCOPE_PROJECT_ID>"
