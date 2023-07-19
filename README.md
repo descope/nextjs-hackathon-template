@@ -12,7 +12,7 @@
 
 ✅ [Descope](https://descope.com) NextAuth authentication 🔐 <br/>
 ✅ Protected pages & API routes with NextAuth. <br/>
-✅ The latest Next.js app router, API routing protocols, and NextAuth integrations.
+✅ The latest Next.js app router, API routing protocols, and NextAuth integrations. <br/>
 ✅ A fully and easily customizable Home screen which features an About, Speakers, Sponsors, and FAQ section. <br/>
 ✅ A dedicated Team page to showcase all contributors.  <br/>
 ✅ A Dashboard page for Hackers to complete onboarding forms, acceptance status, and hackathon announcements. <br/>
