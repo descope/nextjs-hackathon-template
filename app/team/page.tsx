@@ -20,8 +20,6 @@ export default function Team() {
                         />                    
                         <div className="w-full break-all">
                             <p className="my-4 text-2xl">{person.name} / <span className='text-[#207ceb]'>{person.role}</span></p>
-                            <p className="mb-1 bg-blue-100 p-4">{person.linkedin}</p>
-                            <p className="mb-1 bg-blue-200 p-4">{person.facebook}</p>
                             <p className="mb-1 bg-blue-300 p-4">{person.website}</p>
                             <p className="mb-1 bg-blue-400 p-4">{person.twitter}</p>
                         </div>
