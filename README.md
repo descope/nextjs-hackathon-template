@@ -114,7 +114,9 @@ To see our template data in action make your way to ```app/page.tsx```. <br />
 In the ```page.tsx``` we import the different template data and the components from our ```_components``` folder. We pass in 
 our template data into these components as props that then render the data! 
 
-## 📦 Airtable Setup
+## 📦 Airtable Setup 
+
+> **_NOTE:_**  This step is Optional!
 
 To learn more about creating a form and setting up Airtable as a database go to [Airtable.md](Airtable.md)! 
 
