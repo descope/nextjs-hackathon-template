@@ -27,7 +27,6 @@ yarn-error.log*
 # local env files
 /.env
 
-
 # vercel
 .vercel
 
@@ -35,4 +34,5 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
+# vscode
 .vscode
