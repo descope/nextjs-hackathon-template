@@ -15,7 +15,8 @@ import { SocialList } from './_template_data/Social'
 const silkScreen = Silkscreen({
     subsets: ["latin"],
     style: "normal",
-    weight: '400'
+    weight: '400',
+    display: 'swap'
 })
 
 

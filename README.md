@@ -44,7 +44,18 @@ DESCOPE_ACCESS_KEY="<YOUR_DESCOPE_ACCESS_KEY>"
 $ openssl rand -base64 32
 ```
 
-2. Installation
+2. Setup SSO 
+
+- To enable SSO and add Descope as an Identity Provider (idP), we need to add our flow hosting URL: 
+```
+https://auth.descope.io/<YOUR_DESCOPE_PROJECT_ID>
+```
+
+- Navigate to Descope Project --> Authentication methods --> Identity Provider:
+
+<img src="./readme-assets/sso.png" />
+
+3. Installation
 
 - `npm install`
 - `npm run dev`
