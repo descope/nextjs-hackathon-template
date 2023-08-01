@@ -46,7 +46,7 @@ $ openssl rand -base64 32
 
 2. Setup SSO 
 
-- To enable SSO and add Descope as an Identity Provider (idP), we need to add our flow hosting URL: 
+- To enable SSO and add Descope as an Identity Provider (IdP), we need to add our flow hosting URL: 
 ```
 https://auth.descope.io/<YOUR_DESCOPE_PROJECT_ID>
 ```
