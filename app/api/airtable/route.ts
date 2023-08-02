@@ -5,6 +5,7 @@ import Airtable from 'airtable'
 
 
 export async function GET(request: NextRequest) {
+    console.log(request)
     const API_KEY = process.env.AIRTABLE_PERSONAL_ACCESS_TOKEN
     const AIRTABLE_BASE = process.env.AIRTABLE_BASE
     const AIRTABLE_VIEW = process.env.AIRTABLE_TABLE_NAME
