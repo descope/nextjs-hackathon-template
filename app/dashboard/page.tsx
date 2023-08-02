@@ -12,12 +12,14 @@ import { AnnouncementsList } from "@/app/_template_data/Announcements"
 import { headers } from "next/headers"
 
 const getData = async () => {
+    const headersInstance = headers()
+
     const session = await getServerSession(authOptions)
     const email = encodeURIComponent(session?.user?.email || "")
     const res = await fetch(`${process.env.NEXTAUTH_URL}/api/airtable?email=${email}`, 
     {
         method: "GET",
-        headers: headers()
+        headers: headersInstance
     })   
 
     const data = await res.json()
