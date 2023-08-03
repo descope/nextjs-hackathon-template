@@ -16,7 +16,7 @@ const getData = async () => {
     const session = await getServerSession(authOptions)
     const email = encodeURIComponent(session?.user?.email || "")
 
-    const res = await fetch(`${process.env.NEXTAUTH_URL}/api/airtable?email=${email}`)   
+    const res = await fetch(`${process.env.NEXTAUTH_URL}/api/airtable?email=${email}&secret=${process.env.SECRET_TOKEN}`)   
     const data = await res.json()
 
     return data.body
