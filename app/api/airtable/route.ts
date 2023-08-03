@@ -7,9 +7,9 @@ import { authOptions } from '@/app/_utils/options'
 
 
 export async function GET(request: NextRequest) {
-    // const session = await getServerSession(authOptions)
+    const session = await getServerSession(authOptions)
 
-    // console.log(session)
+    console.log("Session from API:", session)
     // if (!session) return NextResponse.json("Unauthorized", { status: 401 })
 
     const API_KEY = process.env.AIRTABLE_PERSONAL_ACCESS_TOKEN

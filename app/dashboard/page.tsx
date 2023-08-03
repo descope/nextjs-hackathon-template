@@ -1,6 +1,8 @@
 import { getServerSession } from 'next-auth'
 import { authOptions } from '@/app/_utils/options'
 
+import { redirect } from 'next/navigation'
+
 import Header from "./_components/Header"
 import Status from "./_components/Status"
 import Form from "./_components/Form"
@@ -23,6 +25,12 @@ const getData = async () => {
 
 export default async function Dashboard() {
     const airtableRecord = await getData()
+
+    const session = await getServerSession(authOptions)
+    
+    if (!session) {
+        redirect("/api/auth/signin?callbackUrl=/dashboard")
+    }
 
     return (
         <div className='page space'>
