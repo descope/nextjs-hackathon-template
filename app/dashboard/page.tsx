@@ -17,16 +17,12 @@ const getData = async () => {
     const res = await fetch(`${process.env.NEXTAUTH_URL}/api/airtable?email=${email}`)   
     const data = await res.json()
 
-    console.log("This is the data: ", data)
-
     return data.body
 }
 
 
 export default async function Dashboard() {
     const airtableRecord = await getData()
-
-    console.log(airtableRecord)
 
     return (
         <div className='page space'>
