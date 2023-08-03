@@ -2,16 +2,21 @@
 import { NextResponse } from 'next/server'
 import type { NextRequest } from 'next/server'
 import Airtable from 'airtable'
+import { getServerSession } from 'next-auth'
+import { authOptions } from '@/app/_utils/options'
 
 
 export async function GET(request: NextRequest) {
-    const API_KEY = process.env.AIRTABLE_PERSONAL_ACCESS_TOKEN
-    const AIRTABLE_BASE = process.env.AIRTABLE_BASE
-    const AIRTABLE_VIEW = process.env.AIRTABLE_TABLE_NAME
+    const session = await getServerSession(authOptions)
+    if (!session) return NextResponse.json("Unauthorized", { status: 401 })
 
-    const base = new Airtable({apiKey: API_KEY}).base(AIRTABLE_BASE || "");
-    const { searchParams } = new URL(request.url)
-    const email = searchParams.get('email')
+    // const API_KEY = process.env.AIRTABLE_PERSONAL_ACCESS_TOKEN
+    // const AIRTABLE_BASE = process.env.AIRTABLE_BASE
+    // const AIRTABLE_VIEW = process.env.AIRTABLE_TABLE_NAME
+
+    // const base = new Airtable({apiKey: API_KEY}).base(AIRTABLE_BASE || "");
+    // const { searchParams } = new URL(request.url)
+    // const email = searchParams.get('email')
 
     // const res = await base(AIRTABLE_VIEW || "")
     //     .select({ filterByFormula: `email="${email}"`})

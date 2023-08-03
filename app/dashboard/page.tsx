@@ -9,24 +9,24 @@ import Info from "./_components/Info"
 
 import { AnnouncementsList } from "@/app/_template_data/Announcements"
 
-import { headers } from "next/headers"
 
 const getData = async () => {
     const session = await getServerSession(authOptions)
     const email = encodeURIComponent(session?.user?.email || "")
-    const res = await fetch(`${process.env.NEXTAUTH_URL}/api/airtable?email=${email}`, 
-    {
-        method: "GET",
-        headers: headers()
-    })   
 
+    const res = await fetch(`${process.env.NEXTAUTH_URL}/api/airtable?email=${email}`)   
     const data = await res.json()
+
+    console.log("This is the data: ", data)
+
     return data.body
 }
 
 
 export default async function Dashboard() {
     const airtableRecord = await getData()
+
+    console.log(airtableRecord)
 
     return (
         <div className='page space'>
