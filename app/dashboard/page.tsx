@@ -1,6 +1,8 @@
 import { getServerSession } from 'next-auth'
 import { authOptions } from '@/app/_utils/options'
 
+import { redirect } from 'next/navigation'
+
 import Header from "./_components/Header"
 import Status from "./_components/Status"
 import Form from "./_components/Form"
@@ -9,23 +11,24 @@ import Info from "./_components/Info"
 
 import { AnnouncementsList } from "@/app/_template_data/Announcements"
 
-import { headers } from "next/headers"
 
 const getData = async () => {
     const session = await getServerSession(authOptions)
     const email = encodeURIComponent(session?.user?.email || "")
-    const res = await fetch(`${process.env.NEXTAUTH_URL}/api/airtable?email=${email}`, 
-    {
-        method: "GET",
-        headers: headers()
-    })   
 
+    const res = await fetch(`${process.env.NEXTAUTH_URL}/api/airtable?email=${email}&secret=${process.env.SECRET_TOKEN}`)   
     const data = await res.json()
+
     return data.body
 }
 
 
 export default async function Dashboard() {
+    const session = await getServerSession(authOptions)
+    if (!session) {
+        redirect("/api/auth/signin?callbackUrl=/dashboard")
+    }
+
     const airtableRecord = await getData()
 
     return (
