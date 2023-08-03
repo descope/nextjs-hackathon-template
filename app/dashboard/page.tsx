@@ -24,13 +24,12 @@ const getData = async () => {
 
 
 export default async function Dashboard() {
-    const airtableRecord = await getData()
-
     const session = await getServerSession(authOptions)
-    
     if (!session) {
         redirect("/api/auth/signin?callbackUrl=/dashboard")
     }
+
+    const airtableRecord = await getData()
 
     return (
         <div className='page space'>
