@@ -2,7 +2,7 @@
 
 <img src="./readme-assets/authhacks.png" />
 
-### [Template Features](#-the-hackathon-template-comes-with-the-following-full-stack-features) 🪐 | [Tech Stack](#-made-with) ✨ | [Setup](#-setup-local-testing) ⚙️ | [Descope](#-descope) 🔑 | [Template Data](#-template-data) 👾 | [Airtable Setup](#-airtable-setup) 📦 | [Gallery](#-gallery) 👨‍🍳
+### [Template Features](#-the-hackathon-template-comes-with-the-following-full-stack-features) 🪐 | [Tech Stack](#-made-with) ✨ | [Deploy](#-deploy) 🚀 | [Setup](#-setup-local-testing) ⚙️ | [Descope](#-descope) 🔑 | [Template Data](#-template-data) 👾 | [Airtable Setup](#-airtable-setup) 📦 | [Gallery](#-gallery) 👨‍🍳
 
 <br />
 
@@ -24,6 +24,10 @@
 - NextAuth (Auth.js) using Descope provider
 - Flowbite
 - Tailwind CSS
+
+## 🚀 Deploy
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fdescope%2Fnextjs-hackathon-template&env=NEXTAUTH_URL,AIRTABLE_FORM_EMBED,AIRTABLE_TABLE_NAME,AIRTABLE_BASE,AIRTABLE_PERSONAL_ACCESS_TOKEN,DESCOPE_ACCESS_KEY,DESCOPE_PROJECT_ID,NEXTAUTH_SECRET)
 
 ## ⚙️ Setup: Local Testing
 
