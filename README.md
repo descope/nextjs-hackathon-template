@@ -17,9 +17,11 @@
 
 ## ✨ Made with... 
 
-- NextAuth (Auth.js) using Descope provider
-- Flowbite
-- Tailwind CSS
+- [Descope](https://www.descope.com/)
+- [NextAuth](https://next-auth.js.org/)
+- [Flowbite](https://flowbite.com/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Airtable](https://www.airtable.com/) (Optional)
 
 ## ⚙️ Setup: Local Testing
 
