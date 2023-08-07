@@ -107,8 +107,6 @@ const handler = NextAuth(authOptions)
 export { handler as GET, handler as POST }
 ```
 
-That's it! 
-
 ## 👾 Template Data
  
 The template data can be found in the ```./app/_template_data``` 
@@ -128,18 +126,4 @@ To learn more about creating a form and setting up Airtable as a database go to 
 ## 🚀 Deploy
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fdescope%2Fnextjs-hackathon-template&env=NEXTAUTH_URL,AIRTABLE_FORM_EMBED,AIRTABLE_TABLE_NAME,AIRTABLE_BASE,AIRTABLE_PERSONAL_ACCESS_TOKEN,DESCOPE_ACCESS_KEY,DESCOPE_PROJECT_ID,NEXTAUTH_SECRET)
-
-## 👨‍🍳 Gallery
-
-<img src="./readme-assets/authhacks_1.png" />
-<img src="./readme-assets/authhacks_2.png" />
-<img src="./readme-assets/authhacks_3.png" />
-<img src="./readme-assets/authhacks_4.png" />
-<img src="./readme-assets/authhacks_5.png" />
-<img src="./readme-assets/authhacks_6.png" />
-<img src="./readme-assets/team.png" />
-<img src="./readme-assets/accepted_1.png" />
-<img src="./readme-assets/accepted_2.png" />
-<img src="./readme-assets/application_pending.png" />
-<img src="./readme-assets/signup.png" />
 
