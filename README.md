@@ -114,8 +114,6 @@ That's it!
  
 The template data can be found in the ```./app/_template_data``` 
 
-<img width="250" src="./readme-assets/template_data.png" />
-
 All the template data can be customized and found in the following files. <br />
 
 To see our template data in action make your way to ```app/page.tsx```. <br />
