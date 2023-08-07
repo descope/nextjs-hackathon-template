@@ -42,6 +42,8 @@ SECRET_TOKEN="YOUR_SECRET_TOKEN"
 $ openssl rand -base64 32
 ```
 
+> **_NOTE:_** The `SECRET_TOKEN` is used to authenticate the request in the API. It is passed as a parameter in the fetch URL.
+
 2. Setup SSO 
 
 - To enable SSO and add Descope as an Identity Provider (IdP), we need to add our flow hosting URL: 
