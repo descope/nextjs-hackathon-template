@@ -2,7 +2,6 @@
 
 ### [Template Features](#-the-hackathon-template-comes-with-the-following-full-stack-features) · [Tech Stack](#-made-with) · [Setup](#-setup-local-testing) · [Descope](#-descope) · [Template Data](#-template-data) · [Airtable Setup](#-airtable-setup) · [Deploy](#-deploy) · [Gallery](#-gallery) 
 
-<br />
 
 ## 🪐 The Hackathon template comes with the following full-stack features:
 
