@@ -26,12 +26,12 @@
 1. In the root directory of the project, copy the `.env.example` to `.env` by running `cp .env.example .env` and include the following:
 
 ```
-NEXTAUTH_SECRET="<YOUR_NEXTAUTH_SECRET>"
-NEXTAUTH_URL="<WHERE SERVER IS HOSTED (e.g. http://localhost:3000)>"
+NEXTAUTH_SECRET="YOUR_NEXTAUTH_SECRET"
+NEXTAUTH_URL="WHERE SERVER IS HOSTED (e.g. http://localhost:3000)"
 
-DESCOPE_PROJECT_ID="<YOUR_DESCOPE_PROJECT_ID>"
-DESCOPE_ACCESS_KEY="<YOUR_DESCOPE_ACCESS_KEY>"
-SECRET_TOKEN="<YOUR_SECRET_TOKEN>"
+DESCOPE_PROJECT_ID="YOUR_DESCOPE_PROJECT_ID"
+DESCOPE_ACCESS_KEY="YOUR_DESCOPE_ACCESS_KEY"
+SECRET_TOKEN="YOUR_SECRET_TOKEN"
 ```
 
 - `DESCOPE_PROJECT_ID` - can be found in your Descope's account under the [Project page](https://app.descope.com/settings/project)  
