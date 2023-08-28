@@ -10,7 +10,7 @@ export default function Header() {
         className="bg-red-500 text-white py-3 px-6 max-md:mt-6"
         onClick={async () => {
           await signOut();
-          window.location.href = `${process.env.NEXT_PUBLIC_NEXTAUTH_URL}/api/auth/federated-sign-out`;
+          window.location.href = `/api/auth/federated-sign-out`;
         }}
       >
         Sign Out

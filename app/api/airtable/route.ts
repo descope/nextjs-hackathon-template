@@ -6,7 +6,7 @@ export async function GET(request: NextRequest) {
   const { searchParams } = new URL(request.url);
   const email = searchParams.get("email");
 
-  if (searchParams.get("secret") !== process.env.NEXT_PUBLIC_SECRET_TOKEN) {
+  if (searchParams.get("secret") !== process.env.NEXT_PRIVATE_SECRET_TOKEN) {
     return NextResponse.json(
       {
         body: { message: "Unauthorized" },

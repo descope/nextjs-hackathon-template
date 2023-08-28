@@ -20,7 +20,7 @@ const getData = async () => {
 
   const email = encodeURIComponent(session?.user?.email || "");
   const res = await fetch(
-    `${process.env.NEXT_PUBLIC_NEXTAUTH_URL}/api/airtable?email=${email}&secret=${process.env.NEXT_PUBLIC_SECRET_TOKEN}`
+    `${process.env.NEXTAUTH_URL}/api/airtable?email=${email}&secret=${process.env.NEXT_PRIVATE_SECRET_TOKEN}`
   );
   if (res.status === 401) {
     throw new Error("Unauthorized");

@@ -8,11 +8,11 @@ const handler = async (req: NextRequest, res: NextResponse) => {
   try {
     const session = await getServerSession(authOptions);
     if (!session) {
-      return NextResponse.redirect(process.env.NEXT_PUBLIC_NEXTAUTH_URL!);
+      return NextResponse.redirect(process.env.NEXTAUTH_URL!);
     }
 
     const endSessionURL = `https://api.descope.com/oauth2/v1/logout`;
-    const redirectURL = `${process.env.NEXT_PUBLIC_NEXTAUTH_URL}/api/auth/logout`;
+    const redirectURL = `${process.env.NEXTAUTH_URL}/api/auth/logout`;
     const endSessionParams = new URLSearchParams({
       // @ts-ignore
       id_token_hint: session.idToken,
