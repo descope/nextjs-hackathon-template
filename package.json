@@ -11,7 +11,7 @@
   "dependencies": {
     "@types/node": "20.8.10",
     "@types/node-fetch": "2.6.8",
-    "@types/react": "18.2.35",
+    "@types/react": "18.2.36",
     "@types/react-dom": "18.2.14",
     "airtable": "0.12.2",
     "autoprefixer": "10.4.16",
