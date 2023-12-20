@@ -1,10 +1,8 @@
 "use client";
 
 import { signOut } from "next-auth/react";
-import { useRouter } from "next/navigation";
 
 export default function Header() {
-  const router = useRouter();
 
   return (
     <div className="row justify-between mb-8">
