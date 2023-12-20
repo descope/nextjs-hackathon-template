@@ -10,7 +10,6 @@ import LogoWhite from "./_assets/logo/icons8-pixel-heart-100.png";
 
 import Bottom from "./_components/Bottom";
 import { SocialList } from "./_template_data/Social";
-import { AuthProvider } from "@descope/react-sdk";
 
 const silkScreen = Silkscreen({
   subsets: ["latin"],
