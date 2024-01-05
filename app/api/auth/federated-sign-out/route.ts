@@ -4,24 +4,28 @@ import { NextRequest, NextResponse } from "next/server";
 
 export const dynamic = "force-dynamic";
 
-const handler = async (req: NextRequest, res: NextResponse) => {
+export async function GET(req: NextRequest, res: NextResponse) {
   try {
     const session = await getServerSession(authOptions);
     if (!session) {
       return NextResponse.redirect(process.env.NEXTAUTH_URL!);
     }
 
-    const endSessionURL = `https://api.descope.com/oauth2/v1/logout`;
-    const redirectURL = `${process.env.NEXTAUTH_URL}/api/auth/logout`;
-    const endSessionParams = new URLSearchParams({
-      // @ts-ignore
-      id_token_hint: session.idToken,
-      post_logout_redirect_uri: redirectURL,
+    const res = fetch("https://api.descope.com/oauth2/v1/logout", {
+      method: "POST",
+      body: new URLSearchParams({
+        // @ts-ignore
+        id_token_hint: session.idToken,
+        // Needed for OAuth logout endpoint
+        post_logout_redirect_uri: process.env.NEXTAUTH_URL!,
+      }),
     });
-    const fullUrl = `${endSessionURL}?${endSessionParams.toString()}`;
-    return NextResponse.redirect(fullUrl);
+
+    return NextResponse.json({ success: true });
   } catch (error) {
-    console.error(error);
+    return NextResponse.json({
+      success: false,
+      message: "Could not sign out of Descope",
+    });
   }
-};
-export const GET = handler;
+}
