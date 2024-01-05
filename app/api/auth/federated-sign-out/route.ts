@@ -4,7 +4,7 @@ import { NextRequest, NextResponse } from "next/server";
 
 export const dynamic = "force-dynamic";
 
-const handler = async (req: NextRequest, res: NextResponse) => {
+export async function GET(req: NextRequest, res: NextResponse) {
   try {
     const session = await getServerSession(authOptions);
     if (!session) {
@@ -16,14 +16,16 @@ const handler = async (req: NextRequest, res: NextResponse) => {
       body: new URLSearchParams({
         // @ts-ignore
         id_token_hint: session.idToken,
+        // Needed for OAuth logout endpoint
         post_logout_redirect_uri: process.env.NEXTAUTH_URL!,
       }),
-    })
+    });
 
     return NextResponse.json({ success: true });
-
   } catch (error) {
-    console.error(error);
+    return NextResponse.json({
+      success: false,
+      message: "Could not sign out of Descope",
+    });
   }
-};
-export const GET = handler;
+}
