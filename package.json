@@ -14,7 +14,7 @@
     "@types/react": "18.2.67",
     "@types/react-dom": "18.2.22",
     "airtable": "0.12.2",
-    "autoprefixer": "10.4.18",
+    "autoprefixer": "10.4.19",
     "encoding": "0.1.13",
     "flowbite": "1.8.1",
     "next": "^14.1.0",
