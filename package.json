@@ -16,7 +16,7 @@
     "airtable": "0.12.2",
     "autoprefixer": "10.4.19",
     "encoding": "0.1.13",
-    "flowbite": "1.8.1",
+    "flowbite": "2.4.1",
     "next": "^14.1.0",
     "next-auth": "4.24.7",
     "postcss": "8.4.38",
