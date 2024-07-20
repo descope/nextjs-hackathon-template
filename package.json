@@ -11,8 +11,8 @@
   "dependencies": {
     "@types/node": "20.14.9",
     "@types/node-fetch": "2.6.11",
-    "@types/react": "18.2.79",
-    "@types/react-dom": "18.2.25",
+    "@types/react": "18.3.3",
+    "@types/react-dom": "18.3.0",
     "airtable": "0.12.2",
     "autoprefixer": "10.4.19",
     "encoding": "0.1.13",
@@ -20,8 +20,8 @@
     "next": "^14.1.0",
     "next-auth": "4.24.7",
     "postcss": "8.4.39",
-    "react": "18.3.0",
-    "react-dom": "18.3.0",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
     "tailwindcss": "3.4.4",
     "typescript": "5.5.2"
   },
